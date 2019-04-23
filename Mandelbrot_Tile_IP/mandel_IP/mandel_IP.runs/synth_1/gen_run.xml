@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg400-1" LaunchTime="1552651835">
+  <File Type="PA-TCL" Name="mandelbrot_tpg_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="mandelbrot_tpg_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="mandelbrot_tpg_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="mandelbrot_tpg_top.vds"/>
+  <File Type="RDS-UTIL" Name="mandelbrot_tpg_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="mandelbrot_tpg_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="mandelbrot_tpg_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="mandelbrot_tpg_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="mandelbrot_tpg_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../mandelbrot_tpg_top.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../mandelbrot_tile.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../mbrot_pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="work"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_pkg_c.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="ieee_proposed"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fixed_float_types_c.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="ieee"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../axi_lite_ipif_v3_0/axi_lite_ipif.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="axi_lite_ipif_v3_0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../axi_lite_ipif_v3_0/address_decoder.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="axi_lite_ipif_v3_0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../axi_lite_ipif_v3_0/ipif_pkg.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="axi_lite_ipif_v3_0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../axi_lite_ipif_v3_0/slave_attachment.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="axi_lite_ipif_v3_0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../axi_lite_ipif_v3_0/pselect_f.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="axi_lite_ipif_v3_0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../mandel_TPG_RWH_v9.5/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mandelbrot_tpg_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
+</GenRun>

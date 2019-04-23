@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="hdmi_test_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Auto Detect" key="hdmi_test_wrapper_hw_platform_0-device"/>
+	<item value="false" key="hdmi_test_wrapper_hw_platform_0-partial_bit"/>
+	<item value="hdmi_test_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Local" key="hdmi_test_wrapper_hw_platform_0-target"/>
+	<item value="C:\Mandelbrot\TPG\vdma_bit64_1080P_mandel2.bit" key="hdmi_test_wrapper_hw_platform_0-bitFile"/>
+</section>

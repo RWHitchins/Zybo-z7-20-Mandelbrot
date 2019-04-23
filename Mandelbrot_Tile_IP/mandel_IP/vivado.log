@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jan 29 10:27:30 2019
+# Process ID: 13040
+# Current directory: C:/Users/RWHitchins/Desktop/mandel/mandel_IP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20216 C:\Users\RWHitchins\Desktop\mandel\mandel_IP\mandel_IP.xpr
+# Log file: C:/Users/RWHitchins/Desktop/mandel/mandel_IP/vivado.log
+# Journal file: C:/Users/RWHitchins/Desktop/mandel/mandel_IP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/RWHitchins/Desktop/mandel/mandel_IP/mandel_IP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 699.559 ; gain = 98.352
+ipx::package_project -root_dir c:/users/rwhitchins/desktop/mandel -vendor xilinx.com -library user -taxonomy /UserIP
+WARNING: [Ipptcl 7-1467] The compile order has been set manually. This prevents the packager from updating                 it if necessary. If errors related to compile order occur, try enabling automatic                 reordering, or calling package_project with the -force_update_compile_order option
+INFO: [IP_Flow 19-5107] Inferred bus interface 'reset' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'pix_clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'pix_clk': Added interface parameter 'ASSOCIATED_RESET' with value 'reset'.
+ERROR: [IP_Flow 19-734] Port 'cmpx_tl': Port type 'complex_t' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'cmpx_br': Port type 'complex_t' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'pixpos_tl': Port type 'xypos_t' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+ERROR: [IP_Flow 19-734] Port 'pixpos_br': Port type 'xypos_t' is not recognized. Only std_logic and std_logic_vector types are allowed for ports. See the documentation for more details.
+WARNING: [IP_Flow 19-3153] Bus Interface 'pix_clk': ASSOCIATED_BUSIF bus parameter is missing.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+ERROR: [Common 17-39] 'ipx::package_project' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Tue Jan 29 10:35:17 2019] Launched synth_1...
+Run output will be captured here: C:/Users/RWHitchins/Desktop/mandel/mandel_IP/mandel_IP.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 29 10:38:29 2019...
